@@ -1,0 +1,19 @@
+﻿@model  StudentDepartment.Models.CreateStuAndDep
+	    
+        @using (Html.BeginForm())
+		{
+<div class="container">
+	<div class="form-group">
+		<label>StuName:</label>
+		@Html.TextBoxFor(x => x.StuName, new { @class = "form-control" })
+	</div>
+	<div class="form-group">
+		<label>DepName:</label>
+		@Html.TextBoxFor(x => x.DepName, new { @class = "form-control" })
+	</div>
+	<div class="button">
+		<button>Create</button>
+	</div>
+
+</div>
+		}
